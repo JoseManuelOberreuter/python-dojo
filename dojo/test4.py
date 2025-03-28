@@ -10,9 +10,9 @@ print(bool("False"))
 # B) False
 # C) Error
 
+
+
 # 👇👇👇 SPOILER: no sigas bajando si no quieres ver la respuesta 👇👇👇
-
-
 
 
 

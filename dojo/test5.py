@@ -11,6 +11,8 @@ print(x[::-1])
 # B) [1, 2, 3]
 # C) Error
 
+
+
 # 👇👇👇 SPOILER: no sigas bajando si no quieres ver la respuesta 👇👇👇
 
 

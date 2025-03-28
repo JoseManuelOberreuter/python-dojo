@@ -1,6 +1,6 @@
 # Test rápido de Python #3
 # -----------------------------------------------
-# ¿Cuál es el resultado de este código?
+# ¿Sabes qué imprime este código?
 
 # Código:
 def f(x=[]):
@@ -121,7 +121,7 @@ print(f())
 Respuesta correcta: B) [1] [1, 1]
 
 Explicación:
-El valor por defecto `x=[]` se evalúa solo una vez, 
+El valor por defecto de `x=[]` se evalúa solo una vez, 
 cuando se define la función. Por eso, cada vez que llamas `f()`, 
 usa y modifica la misma lista.
 Después de la primera llamada, `x` es [1], 
