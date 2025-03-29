@@ -3,13 +3,14 @@
 # ¿Cuál es el resultado de este código?
 
 # Código:
-x = [1, 2, 3]
+x = [1, 2, 3, 4]
 print(x[::-1])
 
 # Opciones:
-# A) [3, 2, 1]
+# A) [1, 2, 3, 4]
 # B) [1, 2, 3]
-# C) Error
+# C) [4, 3, 2, 1]
+# D) Error
 
 
 
@@ -115,7 +116,7 @@ print(x[::-1])
 
 
 """
-Respuesta correcta: A) [3, 2, 1]
+Respuesta correcta: C) [4, 3, 2, 1]
 
 Explicación:
 El operador de slicing `[::-1]` en Python crea una copia invertida de la lista.
