@@ -119,7 +119,7 @@ print(x[::-1])
 Respuesta correcta: C) [4, 3, 2, 1]
 
 Explicación:
-El operador de slicing `[::-1]` en Python crea una copia invertida de la lista.
+El operador de   `[::-1]` en Python crea una copia invertida de la lista.
 Esto funciona indicando un paso negativo (de atrás hacia adelante).
-Así, `[1, 2, 3][::-1]` devuelve `[3, 2, 1]`.
+Así, `[1, 2, 3, 4][::-1]` devuelve `[4, 3, 2, 1]`.
 """
