@@ -10,9 +10,38 @@ print(bool("False"))
 # B) False
 # C) Error
 
-
-
 # 👇👇👇 SPOILER: no sigas bajando si no quieres ver la respuesta 👇👇👇
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -115,8 +144,29 @@ print(bool("False"))
 Respuesta correcta: A) True
 
 Explicación:
-En Python, cualquier string que **no esté vacío** se evalúa como `True`,
-independientemente de su contenido.
-Aunque el texto sea `"False"`, sigue siendo un string con contenido,
-por lo tanto, su valor booleano es `True`.
+En Python, la función bool() convierte un valor a su equivalente booleano, y sigue reglas claras:
+
+- Cualquier string vacío ("") se evalúa como False
+- Cualquier string que contenga al menos un carácter se evalúa como True
+
+En este caso, el string es "False", que aunque semánticamente representa algo falso, no está vacío. Por lo tanto, Python lo considera como True.
+
+Es decir:
+
+    bool("False")  →  True
+
+Esto puede parecer confuso para principiantes, porque el contenido del string sugiere lo contrario. Pero recuerda: Python no evalúa el significado del texto dentro del string, solo verifica si hay contenido.
+
+Otros ejemplos:
+
+    bool("True")     →  True
+    bool("0")        →  True
+    bool("anything") →  True
+    bool("")         →  False
+
+Consejo práctico:
+Siempre que trabajes con strings y valores booleanos, asegúrate de no confundir el contenido del string con su evaluación lógica. Si necesitas verificar el valor del contenido, debes compararlo directamente:
+
+    if my_string == "False":
+        # Esto sí evalúa el texto
 """
