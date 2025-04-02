@@ -155,7 +155,8 @@ Primero veamos esta línea:
 
     x = [[]] * 3
 
-Podrías pensar que estás creando una lista con tres listas vacías independientes. Pero en realidad, estás creando tres referencias al mismo objeto de lista.
+Podrías pensar que estás creando una lista con tres listas vacías independientes. 
+Pero en realidad, estás creando tres referencias al mismo objeto de lista.
 Es decir, todas las posiciones de la lista `x` apuntan exactamente a la misma sublista en memoria.
 
 Podemos confirmarlo usando `id()`:
@@ -168,20 +169,25 @@ Luego haces:
 
     x[0].append(1)
 
-Esto modifica esa sublista compartida, que es la misma para todas las posiciones. Por eso, cuando imprimes `x`, el resultado es:
+Esto modifica esa sublista compartida, que es la misma para todas las posiciones. 
+Por eso, cuando imprimes `x`, el resultado es:
 
     [[1], [1], [1]]
 
 Cada elemento de la lista principal muestra el mismo contenido, porque todos apuntan a la misma sublista.
 
-Este es un comportamiento común que genera confusión, especialmente cuando se usa `*` para "copiar" listas que contienen estructuras mutables.
+Este es un comportamiento común que genera confusión, especialmente cuando 
+se usa `*` para "copiar" listas que contienen estructuras mutables.
 
 Consejo práctico:
-Si quieres crear varias listas vacías independientes, usa una comprensión de listas en lugar de la multiplicación:
+
+Si quieres crear varias listas vacías independientes, usa una comprensión de 
+listas en lugar de la multiplicación:
 
     x = [[] for _ in range(3)]
 
-Así garantizas que cada sublista es un objeto distinto. Ahora sí, al hacer `x[0].append(1)`, solo la primera sublista se verá modificada:
+Así garantizas que cada sublista es un objeto distinto. Ahora sí, al hacer `x[0].append(1)`, 
+solo la primera sublista se verá modificada:
 
     [[1], [], []]
 """
